@@ -1,0 +1,22 @@
+//Question 2.a
+list.files()
+getwd()
+setwd("C:/lab2")
+getwd()
+grep(".csv",list.files(),value=T)
+bank_data<-read.csv("bank-data.csv")
+bank_data
+summary(bank_data)
+plot(x=bank_data$age,y=bank_data$children)
+
+//Question 2.b
+setwd("C:/lab2")
+getwd()
+grep(".csv",list.files(),value=T)
+data<-read.delim("Churn_Modelling.csv",sep=',')
+data
+summary(data)
+getwd()
+new_data<-read.delim("churn.csv",sep=',')
+new_data
+cbind(data,new_data$Active)
